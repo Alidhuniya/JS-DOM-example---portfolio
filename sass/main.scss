@@ -1,0 +1,43 @@
+// abstract = variables,function,mixins,placeholder
+
+// variables
+$primaryColor : #845EC2;
+
+// base = normalize,reset,typography
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+
+// other styles
+#clock {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: $primaryColor;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin-top: 1.3rem;
+}
