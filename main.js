@@ -12,8 +12,20 @@ new Date().toLocaleString(); // 11/16/2015, 11:18:48 PM
 
 */
 
+// loader
+var myVar;
+
+function screenLoader() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+}
+
 // source for below code: https://www.youtube.com/watch?v=C2CrBlGvbEM
-window.onload = function realTimeClock () {
+  function realTimeClock () {
     var Clock = new Date();
 
     var hr = Clock.getHours();
@@ -36,6 +48,8 @@ window.onload = function realTimeClock () {
     hr + "  :  "  + min + "  :  "  + sec + " " + amPm;
     var t = setTimeout(realTimeClock, 500);
 }
+
+realTimeClock();
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function() {scrollFunction()};
@@ -84,3 +98,17 @@ function handleLeave() {
 
 triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
 triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
+
+
+// change background-theme
+ changeBgr = () => {
+  document.body.style.backgroundColor = "#7CEC9F";
+}
+
+changeBgr1 = () => {
+  document.body.style.backgroundColor = "#fff";
+}
+
+changeBgr2 = () => {
+  document.body.style.backgroundColor = "#FD79A8";
+}

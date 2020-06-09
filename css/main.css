@@ -21,6 +21,143 @@ body {
   font-size: 16px;
 }
 
+#loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  width: 100px;
+  height: 100px;
+  -webkit-animation: ani 1s linear infinite;
+          animation: ani 1s linear infinite;
+}
+
+#loader span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #f00;
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+}
+
+#loader span:nth-child(1) {
+  top: 0;
+  left: 0;
+  background: #f79f1f;
+}
+
+#loader span:nth-child(2) {
+  top: 0;
+  right: 0;
+  background: #12cbc4;
+}
+
+#loader span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  background: #ed4c67;
+}
+
+#loader span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  background: #a3cb38;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+  10% {
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    width: 150px;
+    height: 150px;
+  }
+  90% {
+    width: 100px;
+    height: 100px;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes ani {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+  10% {
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    width: 150px;
+    height: 150px;
+  }
+  90% {
+    width: 100px;
+    height: 100px;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  90% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  90% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
 #clock {
   width: 100%;
   text-align: center;
@@ -196,5 +333,46 @@ a.button {
 
 .button[href*=courses] {
   background: #ffc600;
+}
+
+.theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 13rem;
+  margin-right: 0.1rem;
+}
+
+.theme .theme__dv {
+  width: 50px;
+  height: 50px;
+}
+
+.theme .theme__1, .theme .theme__2, .theme .theme__3 {
+  border: 1px solid #000;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.theme .theme__1 {
+  background-color: #7CEC9F;
+}
+
+.theme .theme__2 {
+  background-color: #fff;
+}
+
+.theme .theme__3 {
+  background-color: #FD79A8;
 }
 /*# sourceMappingURL=main.css.map */
