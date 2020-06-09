@@ -37,4 +37,15 @@ window.onload = function realTimeClock () {
     var t = setTimeout(realTimeClock, 500);
 }
 
-realTimeClock();
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("scroll").style.fontSize = "16px";
+    document.getElementById("scroll").style.padding = "20px"
+  } else {
+    document.getElementById("scroll").style.fontSize = "24px";
+    document.getElementById("scroll").style.padding = "30px"
+  }
+}
