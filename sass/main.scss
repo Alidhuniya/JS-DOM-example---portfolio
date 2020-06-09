@@ -49,78 +49,48 @@ $white: #fff;
 
 
 /* navBar */
-.wrapper {
-    background-color: #DCB0FF;
+  
+  nav {
+    background-color: #593796;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1;
+    perspective: 600px;
+  }
 
+  .cool > li > a {
+    color: #DEB2FF;
+    text-decoration: none;
+    font-size: 20px;
+    background: rgba(0,0,0,0.2);
+    padding: 15px 20px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 5px;
   }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px 30px 50px 30px;
-    transition: 0.2s;
-    position: relative;
-    perspective: 600px
-   
-  }
-  
-  .nav-links {
-    padding-right: 5rem;
+
+  nav ul {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
-
-    // list-style: none;
-    // margin: 0;
-    // padding: 0;
-    // display: flex;
-    // justify-content: center;
-  }
-  
-  .nav-item a {
-    display: inline-block;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: #3B1E79;
-    font-size: 1.1rem;
-    font-weight: 600;
-
-    // color: yellow;
-    // text-decoration: none;
-    // font-size: 20px;
-    // background: rgba(0,0,0,0.2);
-    // padding: 10px 20px;
-    // display: inline-block;
-    // margin: 20px;
-    // border-radius: 5px;
-  }
-  
-  .logo {
-    padding-left: 9rem;
-    // width: 110px;
-    font-size: 2rem;
-    text-decoration: none;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-
-// stripe
-.nav-item {
+  .cool > li {
     position: relative;
     display: flex;
     justify-content: center;
-}
+  }
 
+  .userImg {
+    width: 100px;
+    height: 100px;
+  }
 
-.dropdown {
+  .dropdown {
     opacity: 0;
     position: absolute;
     overflow: hidden;
@@ -196,7 +166,7 @@ $white: #fff;
     color: #ffc600;
   }
 
-  .dropdown a.button {
+  a.button {
     background: black;
     display: block;
     padding: 10px;

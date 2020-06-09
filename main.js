@@ -42,11 +42,11 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("scroll").style.fontSize = "16px";
-    document.getElementById("scroll").style.padding = "20px"
+    // document.getElementById("scroll").style.fontSize = "16px";
+    document.getElementById("scroll").style.padding = "25px"
   } else {
-    document.getElementById("scroll").style.fontSize = "24px";
-    document.getElementById("scroll").style.padding = "30px"
+    // document.getElementById("scroll").style.fontSize = "24px";
+    document.getElementById("scroll").style.padding = "15px"
   }
 }
 
