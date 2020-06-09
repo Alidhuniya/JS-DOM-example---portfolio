@@ -112,3 +112,12 @@ changeBgr1 = () => {
 changeBgr2 = () => {
   document.body.style.backgroundColor = "#FD79A8";
 }
+
+function themeSetting() {
+  var x = document.getElementById("configure");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

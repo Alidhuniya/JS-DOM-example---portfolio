@@ -6,14 +6,15 @@
     <title>JS DOM Exercise</title>
     <link rel="stylesheet" href="css/minified/main.min.css">
 </head>
-<body onload="screenLoader()" style="margin:0;">
-  <div id="loader">
+<!-- <body onload="screenLoader()" style="margin:0;"> -->
+  <body>
+  <!-- <div id="loader">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
   </div>
-  <div style="display:none;" id="myDiv">
+  <div style="display:none;" id="myDiv"> -->
 
 
     <!-- Timer -->
@@ -122,13 +123,24 @@
       <!-- End-sticky-Navbar -->
 
       <!-- Change background Theme -->
-      <div class="theme">
+      
+      <div class="setting" onclick="themeSetting()">
+        <img class="setting__img"  src="img/setting.svg" alt="themeSetting">
+      </div>
+
+      <div id="configure" class="theme">
       <div onclick="changeBgr()" class="theme__dv theme__1"></div>
       <div onclick="changeBgr1()" class="theme__dv theme__2"></div>
       <div onclick="changeBgr2()" class="theme__dv theme__3"></div>
     </div>
 
       <!-- End- Change background Theme -->
+
+      <!-- Avatar -->
+      <div class="avatar">
+        <img src="img/avatar.jpg" alt="user">
+      </div>
+      <!-- End-Avatar -->
 
 
 <script src="main.js"></script>
