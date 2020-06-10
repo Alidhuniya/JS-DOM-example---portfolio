@@ -32,6 +32,10 @@ $white: #fff;
     font-size: 16px;
   }
 
+  img {
+    max-width: 100%;
+  }
+
 
 // other styles
 
@@ -338,3 +342,50 @@ $white: #fff;
   }
 }
 
+// avatar
+
+.avatar {
+display: flex;
+justify-content: center;
+margin-top: 4rem;
+ 
+.avatar__img {
+  margin: 0 auto;
+  width: 150px;
+  border-radius: 50%;
+}
+
+}
+
+// typer 
+
+.typer__contain {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.typer__h1 {
+  color: #331772;
+}
+
+.txt-type {
+  color: #815CBF;
+}
+
+// description
+
+
+.desc {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.desc__contents {
+  max-width: 60ch;
+  padding-bottom: 4rem;
+  line-height: 1.8;
+}

@@ -6,7 +6,7 @@
     <title>JS DOM Exercise</title>
     <link rel="stylesheet" href="css/minified/main.min.css">
 </head>
-<!-- <body onload="screenLoader()" style="margin:0;"> -->
+<!-- <body onload="screenLoader(), themeSetting()" > -->
   <body>
   <!-- <div id="loader">
       <span></span>
@@ -138,10 +138,29 @@
 
       <!-- Avatar -->
       <div class="avatar">
-        <img src="img/avatar.jpg" alt="user">
+        <img class="avatar__img" src="img/avatar.jpg" alt="user">
       </div>
       <!-- End-Avatar -->
 
+      <!-- Type Writer -->
+      <section id="typer">
+        <div class="typer__contain">
+      <h1 class="typer__h1">I'm a
+         <span class="txt-type" data-wait="3000" data-words="[&quot;Developer&quot;, &quot;Designer&quot;, &quot;Pentester&quot;]"><span class="txt"></span></span>
+         </h1>
+  </div>
+  </section>
+
+      <!-- End Type Writer -->
+
+    <!-- description -->
+    <div class="desc">
+      <p class="desc__contents">
+       <b>Ali Hussain Dhuniya</b> is  a Self Taught  Developer, Designer, Pentester from Nepal-Rupandehi who's quick learner and loves to create UI with HTML/CSS/SASS, can able to code server side, design and able to find vulnurabilities on web app, I have skills along with best practices which helps to keep code scalable and easy to debug and maintain.
+      </p>
+    </div>
+    <!-- End-description -->
+    
 
 <script src="main.js"></script>
 </body>
