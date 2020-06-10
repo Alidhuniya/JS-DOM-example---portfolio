@@ -195,7 +195,7 @@ function init() {
 
 var images = [
   "./img/ecommerce.png",
-  "./img/const.png",
+  "./img/construction.png",
   "./img/digital.png"
  
 ];
