@@ -389,3 +389,33 @@ margin-top: 4rem;
   padding-bottom: 4rem;
   line-height: 1.8;
 }
+
+
+// Image slider
+
+.imgSlider {
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-top: 3rem;
+}
+
+.imgSlider__h1 {
+  padding-bottom: 2.5rem;
+}
+
+.imgSlider__thumbnail {
+ width: 300px;
+}
+
+.imgSlider__prevbtn {
+  font-size: 2rem;
+  padding: 0.1rem;
+  margin-top: 3rem;
+}
+
+.imgSlider__hrf {
+  display: block;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
