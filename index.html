@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS DOM Exercise</title>
     <link rel="stylesheet" href="css/minified/main.min.css">
+    <script
+    src="https://kit.fontawesome.com/fc31dedf63.js"
+    crossorigin="anonymous"
+  ></script>
 </head>
-<!-- <body onload="screenLoader(), themeSetting()" > -->
-  <body>
-  <!-- <div id="loader">
+<body onload="screenLoader(), themeSetting()" >
+  
+  <div id="loader">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
   </div>
-  <div style="display:none;" id="myDiv"> -->
+  <div style="display:none;" id="myDiv">
 
 
     <!-- Timer -->
@@ -397,6 +401,186 @@
     </div>
 
     <!-- End portfolio -->
+
+
+    <!-- custom HTML 5 video player -->
+
+    <div class='player-container'>
+      <div class='player'>
+      <video id='video' src="https://video.fbwa3-1.fna.fbcdn.net/v/t42.9040-2/83603047_2611038955616264_3018861993290366976_n.mp4?_nc_cat=104&amp;_nc_sid=985c63&amp;efg=eyJ2ZW5jb2RlX3RhZyI6ImxlZ2FjeV9zZCJ9&amp;_nc_ohc=wjFm7A_C7xYAX_PYBt5&amp;_nc_ht=video.fbwa3-1.fna&amp;oh=610e35648e0b29791ef04c150bfaa11c&amp;oe=5EE0D04F" autoplay playsinline></video>
+        <div class='play-btn-big'></div>
+        <div class='controls'>
+          <div class="time"><span class="time-current"></span><span class="time-total"></span></div>
+          <div class='progress'>
+            <div class='progress-filled'></div>
+          </div>
+          <div class='controls-main'>
+            <div class='controls-left'>
+              <div class='volume'>
+                <div class='volume-btn loud'>
+                  <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.75497 17.6928H2C0.89543 17.6928 0 16.7973 0 15.6928V8.30611C0 7.20152 0.895431 6.30611 2 6.30611H6.75504L13.9555 0.237289C14.6058 -0.310807 15.6 0.151473 15.6 1.00191V22.997C15.6 23.8475 14.6058 24.3098 13.9555 23.7617L6.75497 17.6928Z" transform="translate(0 0.000518799)" fill="white"/>
+                    <path id="volume-low" d="M0 9.87787C2.87188 9.87787 5.2 7.66663 5.2 4.93893C5.2 2.21124 2.87188 0 0 0V2C1.86563 2 3.2 3.41162 3.2 4.93893C3.2 6.46625 1.86563 7.87787 0 7.87787V9.87787Z" transform="translate(17.3333 7.44955)" fill="white"/>
+    
+                    <path id="volume-high" d="M0 16.4631C4.78647 16.4631 8.66667 12.7777 8.66667 8.23157C8.66667 3.68539 4.78647 0 0 0V2C3.78022 2 6.66667 4.88577 6.66667 8.23157C6.66667 11.5773 3.78022 14.4631 0 14.4631V16.4631Z" transform="translate(17.3333 4.15689)" fill="white"/> 
+                <path id="volume-off" d="M1.22565 0L0 1.16412L3.06413 4.0744L0 6.98471L1.22565 8.14883L4.28978 5.23853L7.35391 8.14883L8.57956 6.98471L5.51544 4.0744L8.57956 1.16412L7.35391 0L4.28978 2.91031L1.22565 0Z" transform="translate(17.3769 8.31403)" fill="white"/>
+                  </svg>
+    
+                </div>
+                <div class='volume-slider'>
+                  <div class='volume-filled'></div>
+                </div>
+              </div>
+            </div>
+            <div class='play-btn paused'></div>
+            <div class="controls-right">
+              <div class='speed'>
+                <ul class='speed-list'>
+                  <li class='speed-item' data-speed='0.5'>0.5x</li>
+                  <li class='speed-item' data-speed='0.75'>0.75x</li>
+                  <li class='speed-item' data-speed='1' class='active'>1x</li>
+                  <li class='speed-item' data-speed='1.5'>1.5x</li>
+                  <li class='speed-item' data-speed='2'>2x</li>
+                </ul>
+              </div>
+              <div class='fullscreen'>
+                <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0V-1.5H-1.5V0H0ZM0 18H-1.5V19.5H0V18ZM26 18V19.5H27.5V18H26ZM26 0H27.5V-1.5H26V0ZM1.5 6.54545V0H-1.5V6.54545H1.5ZM0 1.5H10.1111V-1.5H0V1.5ZM-1.5 11.4545V18H1.5V11.4545H-1.5ZM0 19.5H10.1111V16.5H0V19.5ZM24.5 11.4545V18H27.5V11.4545H24.5ZM26 16.5H15.8889V19.5H26V16.5ZM27.5 6.54545V0H24.5V6.54545H27.5ZM26 -1.5H15.8889V1.5H26V-1.5Z" transform="translate(2 2)" fill="white"/>
+          </svg>
+      </svg>
+      </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End custom html5 video player -->
+
+
+    <!-- blog -->
+
+    <div class="mainWrapper" id="Allposts">
+      <h1 class="mainWrapper__h1">Blogs</h1>
+      <!-- posts -->
+      <div class="posts">
+        <!-- eachPost -->
+        <div class="posts__post">
+          <div class="posts__heading">
+            <div class="posts__avatarImg">
+              <img class="posts__img" src="img/headingimg.jpg" alt="writer">
+            </div>
+            <div class="posts__avatarInfo">
+              <h3 class="posts__h3">Nandu Singh</h3>
+              <a class="posts__href" href="#">2 Days ago</a>
+            </div>
+          </div>
+          <div class="posts__imgDiv">
+            <a href="single-post/bootstrap.html">
+            <img class="posts__featureImg" src="img/featureImg.jpg" alt="">
+          </a>
+          </div>
+          <div class="posts__title">
+            <a href="single-post/bootstrap.html">
+            <p class="posts__description">
+              What's new in Bootstrap 5 and when Bootstrap 5 release date?
+            </p>
+          </a>
+          </div>
+        </div>
+        <!-- End-eachPost -->
+        <div class="posts__post">
+          <div class="posts__heading">
+            <div class="posts__avatarImg">
+              <img class="posts__img" src="img/headingimg1.png" alt="writer">
+            </div>
+            <div class="posts__avatarInfo">
+              <h3 class="posts__h3">
+                Poppy Cooke
+              </h3>
+              <a class="posts__href" href="#">3 Days ago</a>
+            </div>
+          </div>
+          <div class="posts__imgDiv">
+            <a href="single-post/bootstrap.html">
+            <img class="posts__featureImg" src="img/featureImg1.jpg" alt="">
+          </a>
+          </div>
+          <div class="posts__title">
+            <a href="single-post/bootstrap.html">
+            <p class="posts__description">
+              7 GitHub Repos You Need To Know For Web Development &amp; Cod...
+            </p>
+          </a>
+          </div>
+        </div>
+
+        <div class="posts__post">
+          <div class="posts__heading">
+            <div class="posts__avatarImg">
+              <img class="posts__img" src="img/headingimg2.png" alt="writer">
+            </div>
+            <div class="posts__avatarInfo">
+              <h3 class="posts__h3">
+                Randy Rickards
+              </h3>
+              <a class="posts__href" href="#">7 Days ago</a>
+            </div>
+          </div>
+          <div class="posts__imgDiv">
+            <a href="single-post/bootstrap.html">
+            <img class="posts__featureImg" src="img/featureImg2.jpg" alt="">
+          </a>
+          </div>
+          <div class="posts__title">
+            <a href="single-post/bootstrap.html">
+            <p class="posts__description">
+              10 Important Things Front-End Developers Should Learn in ...
+            </p>
+          </a>
+          </div>
+        </div>
+      </div>
+      <!-- End-posts -->
+
+    </div>
+    
+    <!-- End blog -->
+
+    <!-- Faq -->
+
+    <button class="accordion">Who Am I?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">What I do?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Where I'm?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+    <!-- End-faq -->
+
+    <!-- contact me -->
+    <h1 class="contact">Contact Me</h1>
+    <div class="aside__icons">
+      <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+        </div>
+
+    <!-- End contact me -->
+
+    <!-- footer -->
+
+        <footer>
+          &copy Made by Ali Dhuniya
+        </footer>
+    <!-- End -footer -->
     
 
 <script src="main.js"></script>
